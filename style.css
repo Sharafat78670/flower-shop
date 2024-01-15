@@ -92,8 +92,12 @@ header {
 
 .head-img {
     width: 635px;
-    height: 800px;
+    height: 700px;
     object-fit: cover;
+}
+.head-img img{
+    width: 100%;
+    height: 700px;
 }
 
 /* Main section */
@@ -220,13 +224,16 @@ header {
 .latest-container {
     margin: 100px auto;
     text-align: center;
-    padding-top: 100px;
+    align-items: center;
     background-image: url('Flower Asset/Rectangle\ 9.png');
     width: 100%;
     height: 350px;
     background-repeat: no-repeat;
     background-size: contain;
     object-fit: cover;
+}
+.latest{
+    padding-top: 100px;
 }
 
 #email {
@@ -267,4 +274,60 @@ footer{
 }
 .footer-container h5{
     color: var(--back-color);
+}
+
+@media screen and (max-width:576px) {
+    header,
+    main {
+    max-width: 100%;
+    margin: 0;
+    }
+    .navigation,
+    .head-container,
+    .featured-img,
+    .delivery-container,
+    .hot-deal,
+    .Instagram-img{
+        flex-direction: column;
+    }
+    .navigation ul{
+        margin: 0;
+        padding: 0;
+    }
+    .featured-content,
+    .hot-deal-content,
+    .Instagram-content{
+        width: 100%;
+        text-align: center;
+        
+    }
+    .delivery-container{
+        height: fit-content;
+        padding: 10px;
+    }
+    .head-img {
+        width: 400px;
+        height: 600px;
+        object-fit: cover;
+    }
+    .head-img img{
+        width: 100%;
+        height: 600px;
+    }
+    .latest-container{
+        width: 450px;
+        height: 200px;
+       margin-left: -90px;
+
+    }
+    .latest{
+        padding-top: 10px;
+    }
+    #email,#Subscribe {
+        width: 50%;
+        height: 30px;
+    } 
+    #Subscribe {
+        width: 80px;
+    }
 }
